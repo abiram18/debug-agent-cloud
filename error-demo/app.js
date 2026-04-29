@@ -1,7 +1,7 @@
 const DebugAgent = require('../sdk/debug-agent');
 
 const agent = new DebugAgent({
-  apiUrl: "http://localhost:5050/log-error",
+  apiUrl: "https://debug-agent-cloud.onrender.com/log-error",
   service: "frontend-app"
 });
 

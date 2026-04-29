@@ -8,7 +8,6 @@ class DebugAgent {
 
   async captureError(error, sourceService = this.service) {
     try {
-      // 🔥 prevent duplicate capture
       if (error._captured) return;
       error._captured = true;
 
