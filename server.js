@@ -60,7 +60,7 @@ Give root cause and fix.
     analysis = response.data.choices[0].message.content;
 
   } catch (err) {
-    console.error("❌ AI error:", err.message);
+    console.error("❌ FULL GROQ ERROR:", err.response?.data || err.message);
     analysis = "AI failed";
   }
 }
